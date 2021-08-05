@@ -1,11 +1,11 @@
 #include <stdio.h>
+//#include <string.h>
 #include "string_io.h"
 
-void record2(void);
 
 int main(void)
 {
-	record2();
+	string_io();
 	return 0;
 }
 

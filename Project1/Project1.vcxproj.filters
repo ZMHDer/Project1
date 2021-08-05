@@ -18,16 +18,22 @@
     <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="string_io.c">
+    <ClCompile Include="Src\string_io.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\deal_data.c">
       <Filter>资源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="string_io.h">
+    <ClInclude Include="Inc\deal_data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\string_io.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md" />
+    <None Include="..\README.md" />
   </ItemGroup>
 </Project>
