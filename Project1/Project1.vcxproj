@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Src\cycle.c" />
     <ClCompile Include="Src\deal_data.c" />
     <ClCompile Include="Src\string_io.c">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\VS_project\Project1\Project1\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -149,6 +150,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Inc\cycle.h" />
     <ClInclude Include="Inc\deal_data.h" />
     <ClInclude Include="Inc\string_io.h" />
   </ItemGroup>

@@ -24,12 +24,18 @@
     <ClCompile Include="Src\deal_data.c">
       <Filter>资源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Src\cycle.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\deal_data.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Inc\string_io.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\cycle.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
