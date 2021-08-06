@@ -45,10 +45,12 @@
 */
 
 #include "string_io.h"
+#include <stdio.h>
+#include <string.h>
 
 void string_io(void)
 {
-	char ming[20], xing[20];
+	char ming[20] = { 0 }, xing[20] = { 0 };
 	int ming_num, xing_num;
 
 	printf("ÇëÊäÈëÃû£º\n");

@@ -1,11 +1,12 @@
 #include <stdio.h>
 //#include <string.h>
 #include "string_io.h"
+#include "deal_data.h"
 
 
 int main(void)
-{
-	string_io();
+{	
+	deal_data();
 	return 0;
 }
 
