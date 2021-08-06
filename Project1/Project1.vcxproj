@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Src\branch_jump.c" />
     <ClCompile Include="Src\cycle.c" />
     <ClCompile Include="Src\deal_data.c" />
     <ClCompile Include="Src\string_io.c">
@@ -150,6 +151,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Inc\branch_jump.h" />
     <ClInclude Include="Inc\cycle.h" />
     <ClInclude Include="Inc\deal_data.h" />
     <ClInclude Include="Inc\string_io.h" />
