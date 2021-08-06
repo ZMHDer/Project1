@@ -1,4 +1,4 @@
-/*=================================== 循环、运算符 ========================================
+/*================================================ 循环、运算符 ==================================================
 * 
 * 1.关系运算符也可以比较浮点数，但比较时，尽量只使用 < 和 > ，因为浮点数的舍入误差会导致在逻辑上相等的两个数不等。
 *	如3.0*(1.0/3.0)=0.999999...  亦可使用math.h中的fabs()函数进行浮点数的比较，返回输入浮点数的绝对值。
@@ -20,12 +20,40 @@
 *				如：
 *					value = (1 , 2);			//value = 2;
 *					value = (x = 1 , x + 1);	//value = 2;
-* 5.
 * 
+* 5.注意：	考虑到影响执行速度，C 编译器不会检查数组的下标是否正确。当运行程序时，下标溢出会导致数据被放置在已被其他数据占用的位置，
+*			可能会破坏程序的结果甚至导致程序异常中断。
 * 
+* 6.如果char类型的数组末尾包含一个表示字符串末尾的空字符\0，则该数组中的内容就构成了一个字符串。
 * 
 * 
 */
 
 #include "cycle.h"
+#include <stdio.h>
 
+//输入 为原有朋友数
+//返回 朋友数量达到稳定的周数
+int stable_circle_of_friends(int friends)
+{
+	int friends_num = friends;
+	int week = 0;
+
+	while (friends_num < 150)	//达到邓巴数：150
+	{
+		week++;
+		friends_num = 2 * (friends_num - week);			//第n周少n个朋友再翻倍
+		printf("第%d周有%d个朋友\n", week, friends_num);
+	}
+	return week;
+}
+
+void stable_circle_of_week(void)
+{
+	int week = 0, friends_num;
+
+	printf("请输入你朋友圈目前有几个朋友：");
+	scanf_s("%d", &friends_num);
+	week = stable_circle_of_friends(friends_num);
+	printf("第%d周有了稳定的朋友数量", week);
+}

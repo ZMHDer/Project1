@@ -58,8 +58,8 @@ void string_io(void)
 	printf("«Î ‰»Î–’£∫\n");
 	scanf_s("%s", xing, 20);
 	printf("%s %s\n", ming, xing);
-	ming_num = strlen(ming);
-	xing_num = strlen(xing);
+	ming_num = (int)strlen(ming);
+	xing_num = (int)strlen(xing);
 	printf("%*d %*d\n", ming_num, ming_num, xing_num, xing_num);
 	printf("%s %s\n", ming, xing);
 	printf("%-*d %-*d\n", ming_num, ming_num, xing_num, xing_num);
