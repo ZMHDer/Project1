@@ -3,10 +3,11 @@
 #include "string_io.h"
 #include "deal_data.h"
 #include "cycle.h"
+#include "branch_jump.h"
 
 int main(void)
 {
-	stable_circle_of_week();
+	vegetable_shopping();
 	return 0;
 }
 

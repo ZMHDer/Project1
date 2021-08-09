@@ -30,6 +30,9 @@
     <ClCompile Include="Src\branch_jump.c">
       <Filter>资源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Src\char_io.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\deal_data.h">
@@ -42,6 +45,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Inc\branch_jump.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\char_io.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
